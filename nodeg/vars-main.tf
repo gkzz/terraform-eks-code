@@ -25,13 +25,13 @@ variable "eks_version" {
 
 
 variable "stages" {
-  type    = list(string)
-  default = ["net", "iam", "c9net", "cluster", "nodeg", "cicd", "eks-cidr", "sampleapp"]
+type=list(string)
+default=["net","iam","c9net","cluster","nodeg","cicd","eks-cidr","sampleapp"]
 }
 
 variable "stagecount" {
-  type    = number
-  default = 8
+type=number
+default=8
 }
 
 variable "no-output" {
